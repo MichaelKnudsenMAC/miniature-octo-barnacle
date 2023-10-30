@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Test action
-        uses: ./hello-world-docker-action
+        uses: MichaelKnudsenMAC/miniature-octo-barnacle/hello-world-docker-action@main
         with: 
           who-to-greet: 'deadpool'
   
