@@ -22,4 +22,11 @@ jobs:
         run: |
            echo "The repository ${{ github.repository }} contains the following files:"
            tree
+  Test-Action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test action
+        uses: ./hello-world-docker-action
+        with: 
+          who-to-greet: 'deadpool'
   
